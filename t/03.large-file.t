@@ -1,3 +1,4 @@
+use Mojo::Base -strict;
 BEGIN { $ENV{MOJO_MAX_MEMORY_SIZE} = 16; }
 our $passed_options = {};
 

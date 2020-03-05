@@ -29,8 +29,20 @@ sub ingest {
 
 =begin html
 
+<!-- Travis badge -->
 <a href="https://travis-ci.com/kiwiroy/mojo-file-role-ingest">
-  <img src="https://travis-ci.com/kiwiroy/mojo-file-role-ingest.svg?token=Kpqpmk91fYg5k9hdqK3y&branch=master">
+  <img src="https://travis-ci.com/kiwiroy/mojo-file-role-ingest.svg?branch=master"
+       alt="Travis Build Status" />
+</a>
+<!-- Kritika badge -->
+<a href="https://kritika.io/users/kiwiroy/repos/9231669397817641/heads/master/">
+  <img src="https://kritika.io/users/kiwiroy/repos/9231669397817641/heads/master/status.svg?type=score%2Bcoverage%2Bdeps"
+       alt="Kritika Analysis Status" />
+</a>
+<!-- Coveralls badge -->
+<a href="https://coveralls.io/github/kiwiroy/mojo-file-role-ingest?branch=master">
+  <img src="https://coveralls.io/repos/github/kiwiroy/mojo-file-role-ingest/badge.svg?branch=master"
+       alt="Coverage Status" />
 </a>
 
 =end html
@@ -122,7 +134,9 @@ C<<< <:encoding(UTF-8) >>>.
 
 =item L<Mojo::File::Role::Lines>
 
-=item L<https://github.com/mojolicious/mojo/issues/1392>
+=item L<mojolicious/mojo#1392|https://github.com/mojolicious/mojo/issues/1392>
+
+=item L<mojolicious/mojo#1478|https://github.com/mojolicious/mojo/issues/1478>
 
 =back
 

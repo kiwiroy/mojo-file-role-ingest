@@ -1,6 +1,18 @@
 <div>
+    <!-- Travis badge -->
     <a href="https://travis-ci.com/kiwiroy/mojo-file-role-ingest">
-      <img src="https://travis-ci.com/kiwiroy/mojo-file-role-ingest.svg?token=Kpqpmk91fYg5k9hdqK3y&branch=master">
+      <img src="https://travis-ci.com/kiwiroy/mojo-file-role-ingest.svg?branch=master"
+           alt="Travis Build Status" />
+    </a>
+    <!-- Kritika badge -->
+    <a href="https://kritika.io/users/kiwiroy/repos/9231669397817641/heads/master/">
+      <img src="https://kritika.io/users/kiwiroy/repos/9231669397817641/heads/master/status.svg?type=score%2Bcoverage%2Bdeps"
+           alt="Kritika Analysis Status" />
+    </a>
+    <!-- Coveralls badge -->
+    <a href="https://coveralls.io/github/kiwiroy/mojo-file-role-ingest?branch=master">
+      <img src="https://coveralls.io/repos/github/kiwiroy/mojo-file-role-ingest/badge.svg?branch=master"
+           alt="Coverage Status" />
     </a>
 </div>
 
@@ -82,4 +94,5 @@ The `$options` hashref will contain the following keys, as a minimum, when
 - [Mojo::File](https://metacpan.org/pod/Mojo%3A%3AFile)
 - [Mojo::File::Role::IngestI](https://metacpan.org/pod/Mojo%3A%3AFile%3A%3ARole%3A%3AIngestI)
 - [Mojo::File::Role::Lines](https://metacpan.org/pod/Mojo%3A%3AFile%3A%3ARole%3A%3ALines)
-- [https://github.com/mojolicious/mojo/issues/1392](https://github.com/mojolicious/mojo/issues/1392)
+- [mojolicious/mojo#1392](https://github.com/mojolicious/mojo/issues/1392)
+- [mojolicious/mojo#1478](https://github.com/mojolicious/mojo/issues/1478)

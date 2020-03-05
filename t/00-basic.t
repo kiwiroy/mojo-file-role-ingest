@@ -1,3 +1,4 @@
+use Mojo::Base -strict;
 use Test::More;
 use File::Find;
 
@@ -19,7 +20,7 @@ if (!eval 'use Test::CPAN::Changes; 1') {
     SKIP: { skip "changes_ok(@_) (Test::CPAN::Changes is required)", 4 }
   };
 }
-
+my @files;
 find(
   {wanted => sub { /\.pm$/ and push @files, $File::Find::name }, no_chdir => 1},
   -e 'blib' ? 'blib' : 'lib',

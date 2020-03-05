@@ -59,6 +59,7 @@
 
 # Avoid prove files
 \B\.prove$
+^\.proverc$
 
 # Avoid MYMETA files
 ^MYMETA\.
@@ -71,3 +72,4 @@
 ^README\.pod
 ^\.perltidyrc
 ^\.travis.yml
+^cpanfile\.snapshot$

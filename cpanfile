@@ -8,5 +8,7 @@ test_requires 'Test::More';
 on develop => sub {
   requires 'Devel::Cover' => '1.33';
   requires "Pod::Coverage";
+  requires "Devel::Cover::Report::Coveralls";
+  requires "Devel::Cover::Report::Kritika";
   requires 'App::git::ship' if $ENV{AUTHOR_RELEASE};
 };
