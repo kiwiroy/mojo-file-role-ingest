@@ -62,7 +62,7 @@ Mojo::File::Role::Ingest - Add ingest method to a file.
 
   $ext_to_role = {csv => '+CSV', txt => '+Lines'};
   $file->list->each(sub {
-    $_->ingest()
+    $_->ingest(...)
   })
 
 =head1 DESCRIPTION
@@ -139,5 +139,14 @@ C<<< <:encoding(UTF-8) >>>.
 =item L<mojolicious/mojo#1478|https://github.com/mojolicious/mojo/issues/1478>
 
 =back
+
+=head1 COPYRIGHT & LICENSE
+
+This library is free software. You can redistribute it and/or modify it under
+the same terms as Perl itself.
+
+=head1 AUTHORS
+
+Roy Storey - <kiwiroy@cpan.org>
 
 =cut

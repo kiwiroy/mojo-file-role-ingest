@@ -17,6 +17,8 @@ sub _readlines ($fh, $opts, $cb) {
     chomp;
     $cb->(decode $opts->{encoding}, $_);
   }
+  $!;
+  # !(close $fh);
 }
 
 1;

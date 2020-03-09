@@ -31,7 +31,7 @@ Mojo::File::Role::Ingest - Add ingest method to a file.
 
     $ext_to_role = {csv => '+CSV', txt => '+Lines'};
     $file->list->each(sub {
-      $_->ingest()
+      $_->ingest(...)
     })
 
 # DESCRIPTION
@@ -96,3 +96,12 @@ The `$options` hashref will contain the following keys, as a minimum, when
 - [Mojo::File::Role::Lines](https://metacpan.org/pod/Mojo%3A%3AFile%3A%3ARole%3A%3ALines)
 - [mojolicious/mojo#1392](https://github.com/mojolicious/mojo/issues/1392)
 - [mojolicious/mojo#1478](https://github.com/mojolicious/mojo/issues/1478)
+
+# COPYRIGHT & LICENSE
+
+This library is free software. You can redistribute it and/or modify it under
+the same terms as Perl itself.
+
+# AUTHORS
+
+Roy Storey - <kiwiroy@cpan.org>

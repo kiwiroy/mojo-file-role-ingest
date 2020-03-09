@@ -17,14 +17,16 @@ is_deeply $lines, ['lorem ', "sum dolor\nLorem ", "sum Dolor\n"],
   'regex used as EOL';
 
 my @lines;
-$test->ingest('+Lines', {}, sub { push @lines, $_ });
+is $test->ingest('+Lines', {}, sub { push @lines, $_ }), '', 'return value';
 is_deeply \@lines, ['lorem ipsum dolor', 'Lorem Ipsum Dolor'], 'lines';
 
 @lines = ();
+my $res;
 {
   local $/ = undef;
-  $test->ingest('+Lines', { eol => undef }, sub { push @lines, $_ });
+  $res = $test->ingest('+Lines', { eol => undef }, sub { push @lines, $_ });
 }
+is $res, '', 'closed fh';
 is_deeply \@lines, ["lorem ipsum dolor\nLorem Ipsum Dolor\n"], 'line';
 
 
@@ -35,10 +37,10 @@ is_deeply $lines, ['✓ Ċalpha-bet', 'second line.'], 'utf16';
 
 # encoding with callback
 @lines = ();
-$enc_test->ingest('+Lines', {mode => '<:encoding(UTF-16BE)'},
+is $enc_test->ingest('+Lines', {mode => '<:encoding(UTF-16BE)'},
   sub {
     push @lines, $_;
-  });
+  }), '', 'closed fh';
 is_deeply \@lines, ['✓ Ċalpha-bet', 'second line.'], 'utf16 ok';
 
 
